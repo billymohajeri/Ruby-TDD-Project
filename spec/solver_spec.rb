@@ -1,4 +1,3 @@
-# require 'rspec'
 require_relative '../classes/solver'
 
 describe Solver do
@@ -12,7 +11,6 @@ describe Solver do
       expect(@test_fact.factorial(1)).to eql(1)
       expect(@test_fact.factorial(0)).to eql(1)
     end
-
 
     it 'raises an error for negative input' do
       expect do
