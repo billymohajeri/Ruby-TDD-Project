@@ -29,15 +29,15 @@ describe Solver do
       expect(@test_solver.reverse('AaBb')).to eql('bBaA')
     end
   end
-end
 
-describe '#fizzbuzz' do
-  it 'returns fizz, buzz, fizzbuzz or the original input of a given integer depending on its value' do
-    expect(@test_solver.fizzbuzz(0)).to eql('fizzbuzz')
-    expect(@test_solver.fizzbuzz(1)).to eql('1')
-    expect(@test_solver.fizzbuzz(3)).to eql('fizz')
-    expect(@test_solver.fizzbuzz(5)).to eql('buzz')
-    expect(@test_solver.fizzbuzz(15)).to eql('fizzbuzz')
-    expect(@test_solver.fizzbuzz(4)).to eql('4')
+  describe '#fizzbuzz' do
+    it 'returns fizz, buzz, fizzbuzz or the original input of a given integer depending on its value' do
+      expect(@test_solver.fizzbuzz(0)).to eql('fizzbuzz')
+      expect(@test_solver.fizzbuzz(1)).to eql('1')
+      expect(@test_solver.fizzbuzz(3)).to eql('fizz')
+      expect(@test_solver.fizzbuzz(5)).to eql('buzz')
+      expect(@test_solver.fizzbuzz(15)).to eql('fizzbuzz')
+      expect(@test_solver.fizzbuzz(4)).to eql('4')
+    end
   end
 end
